@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,20 +8,59 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header class="pt-14">
-      <nav class="container mx-auto flex justify-between">
+    <header class="pt-14 w-[61%] mx-auto">
+      <!-- Navbar Starts here -->
+      <nav class="flex justify-between items-center">
         <figure>
           <img src="./images/logo2.png" alt="" />
         </figure>
-        <ul class="flex gap-7">
+        <ul class="hidden md:flex items-center gap-7">
           <li><a href="">Home</a></li>
           <li><a href="">Services ></a></li>
           <li><a href="">Cases ></a></li>
           <li><a href="">Blog ></a></li>
           <li><a href="">Contact Us ></a></li>
         </ul>
-        <button>Free consultation</button>
+        <button
+          class="bg-[#B68C5A] text-[#ffffff] text-[18px] font-semibold py-[18px] px-[29px]"
+        >
+          Free consultation
+        </button>
       </nav>
+      <!-- Navbar ends here -->
+
+      <!-- banner Starts here -->
+      <div
+        class="text-[#ffffff] bg-[url(./images/banner.png)] bg-cover bg-no-repeat flex flex-col justify-center items-center py-[18px] md:py-[104px] px-[18px] md:px-[239px] mt-[70px] text-center"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-extrabold leading-[85px] mb-[30px]"
+        >
+          We Provide Effective <br />
+          Legal Solutions
+        </h1>
+        <p class="text-[0.83vw] font-normal leading-[26px] text-[#E7E7E7] mb-8">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority <br />
+          have suffered alteration in some form, by injected humour.
+        </p>
+
+        <form class="flex flex-col md:flex-row items-center" action="">
+          <input
+            class="w-full md:w-[500px] py-4 px-5 bg-[#FFFFFF] text-[#A0A0A0] rounded-lg font-500 text-[16px] leading-[26px]"
+            type="email"
+            name=""
+            id=""
+            placeholder="Search your services"
+          />
+          <input
+            class="bg-[#B68C5A] py-[17px] px-10 text-[20px] font-semibold text-[#fffff] rounded-lg ml-6"
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </div>
+      <!-- banner Ends here -->
     </header>
 
     <main></main>
