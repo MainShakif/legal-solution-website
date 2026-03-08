@@ -6,6 +6,11 @@
     <title>Document</title>
     <!-- tailwindcss -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a627f1b95a.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,35 +25,78 @@
     </style>
   </head>
   <body>
-    <section
-      class="Banner section w-[85%] mx-auto bg-[url('./images/banner.png')] bg-cover bg-no-repeat py-[190px] px-60 mt-[50px] rounded-xl"
-    >
-      <div
-        class="banner-content text-white text-center w-[690px] mx-auto space-y-3.5"
+    <!-- HEADER section -->
+    <header class="w-[85%] mx-auto">
+      <!-- navbar -->
+      <nav class="pt-[75px] flex justify-between items-center">
+        <div class="logo">
+          <img src="./images/logo2.png" alt="" />
+        </div>
+        <div class="list-items hidden lg:block">
+          <ul class="flex gap-[50px] text-[#707070]">
+            <li><a href="">Home</a></li>
+            <li class="">
+              <a href=""
+                >Services
+                <i class="ml-2 text-[20px] fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Cases <i class="ml-2 text-[20px] fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >Blog <i class="ml-2 text-[20px] fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >Contact Us
+                <i class="ml-2 text-[20px] fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="w-fit bg-[#B68C5A] text-white text-[20px] font-semibold py-[19px] px-[29px] rounded-lg cursor-pointer"
+        >
+          Free Consultation
+        </button>
+      </nav>
+
+      <!-- Banner section -->
+      <section
+        class="bg-[url('./images/banner.png')] bg-cover bg-no-repeat py-[60px] md:py-[190px] px-10 md:px-60 mt-[50px] rounded-xl flex justify-center items-center"
       >
-        <h1 class="text-[65px] font-extrabold">
-          We Provide Effective Legal Solutions
-        </h1>
-        <p class="text-[#E7E7E7] font-medium">
-          There are many variations of passa have suffered alteratio Search yout
-          servicgg form, by injected humour passa suffered alteratio Search
-          yout.
-        </p>
-        <form class="flex gap-4">
-          <input
-            class="bg-white text-[#A0A0A0] w-[500px] py-[19px] px-6 rounded-lg outline-none font-bold"
-            type="email"
-            name=""
-            id=""
-            placeholder="Search your services"
-          />
-          <input
-            type="submit"
-            value="Search"
-            class="bg-[#B68C5A] font-bold py-[19px] px-10 rounded-lg cursor-pointer"
-          />
-        </form>
-      </div>
-    </section>
+        <div
+          class="banner-content text-white text-center w-[690px] mx-auto space-y-3.5"
+        >
+          <h1 class="text-[40px] md:text-[65px] font-extrabold">
+            We Provide Effective Legal Solutions
+          </h1>
+          <p class="text-[#E7E7E7] font-medium">
+            There are many variations of passa have suffered alteratio Search
+            yout servicgg form, by injected humour passa suffered alteratio
+            Search yout.
+          </p>
+          <form class="flex sm:flex-row flex-col gap-4">
+            <input
+              class="bg-white text-[#A0A0A0] w-[500px] py-[19px] px-6 rounded-lg outline-none font-bold"
+              type="email"
+              name=""
+              id=""
+              placeholder="Search your services"
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="bg-[#B68C5A] font-bold py-[19px] px-10 rounded-lg cursor-pointer"
+            />
+          </form>
+        </div>
+      </section>
+    </header>
   </body>
 </html>
